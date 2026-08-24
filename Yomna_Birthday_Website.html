@@ -1,0 +1,1991 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🎉 Happy Birthday Yomna!</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      :root {
+        --or: #ff6b35;
+        --pk: #ff4f8b;
+        --yw: #ffd93d;
+        --tl: #00c6ae;
+        --pu: #9b5de5;
+        --dk: #1a1035;
+        --bg: #fdf4e7;
+        --sh: 0 8px 32px rgba(255, 107, 53, 0.18);
+      }
+      body {
+        font-family: "Nunito", sans-serif;
+        background: var(--bg);
+        color: var(--dk);
+        overflow-x: hidden;
+      }
+
+      /* FLOATING BG EMOJIS */
+      #floaters {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: 0;
+        overflow: hidden;
+      }
+      #floaters span {
+        position: absolute;
+        animation: floatUp linear infinite;
+        opacity: 0.15;
+        font-size: 1.5rem;
+        user-select: none;
+      }
+      @keyframes floatUp {
+        0% {
+          transform: translateY(105vh) rotate(0deg);
+          opacity: 0.2;
+        }
+        100% {
+          transform: translateY(-10vh) rotate(360deg);
+          opacity: 0;
+        }
+      }
+
+      /* NAV */
+      nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 200;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 11px 28px;
+        background: rgba(253, 244, 231, 0.92);
+        backdrop-filter: blur(14px);
+        border-bottom: 2px solid rgba(255, 107, 53, 0.1);
+      }
+      .nav-logo {
+        font-family: "Pacifico", cursive;
+        color: var(--or);
+        font-size: 1.25rem;
+      }
+      .nav-links {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+      .nav-links button {
+        background: none;
+        border: 2px solid rgba(255, 107, 53, 0.22);
+        color: var(--dk);
+        padding: 7px 16px;
+        border-radius: 50px;
+        font-family: "Nunito", sans-serif;
+        font-weight: 700;
+        font-size: 0.85rem;
+        cursor: pointer;
+        transition: all 0.22s;
+      }
+      .nav-links button:hover {
+        background: var(--or);
+        border-color: var(--or);
+        color: #fff;
+        transform: translateY(-2px);
+      }
+
+      /* PAGE SYSTEM */
+      .pg {
+        display: none !important;
+        min-height: 100vh;
+        position: relative;
+        z-index: 1;
+      }
+      .pg.on {
+        display: block !important;
+        animation: pageFade 0.4s ease both;
+      }
+      @keyframes pageFade {
+        from {
+          opacity: 0;
+          transform: translateY(16px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      #pg-home.on {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 80px 20px 40px;
+        overflow: hidden;
+      }
+      #pg-egg.on {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 90px 20px 40px;
+      }
+
+      /* HOME */
+      .orb {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(70px);
+        opacity: 0.28;
+        pointer-events: none;
+        animation: drift 9s ease-in-out infinite alternate;
+      }
+      .ob1 {
+        width: 380px;
+        height: 380px;
+        background: var(--yw);
+        top: -90px;
+        left: -90px;
+      }
+      .ob2 {
+        width: 300px;
+        height: 300px;
+        background: var(--pk);
+        bottom: -60px;
+        right: -60px;
+        animation-delay: -4s;
+      }
+      .ob3 {
+        width: 240px;
+        height: 240px;
+        background: var(--tl);
+        top: 38%;
+        left: 58%;
+        animation-delay: -2s;
+      }
+      @keyframes drift {
+        from {
+          transform: translate(0, 0);
+        }
+        to {
+          transform: translate(28px, 18px) scale(1.08);
+        }
+      }
+      .home-inner {
+        position: relative;
+        z-index: 2;
+      }
+      .bounce-row {
+        font-size: 2.2rem;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        margin-bottom: 14px;
+      }
+      .bounce-row span {
+        display: inline-block;
+        animation: bmp 1.6s ease-in-out infinite;
+      }
+      .bounce-row span:nth-child(1) {
+        animation-delay: 0s;
+      }
+      .bounce-row span:nth-child(2) {
+        animation-delay: 0.15s;
+      }
+      .bounce-row span:nth-child(3) {
+        animation-delay: 0.3s;
+      }
+      .bounce-row span:nth-child(4) {
+        animation-delay: 0.45s;
+      }
+      .bounce-row span:nth-child(5) {
+        animation-delay: 0.6s;
+      }
+      @keyframes bmp {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-14px);
+        }
+      }
+      .hbd-title {
+        font-family: "Pacifico", cursive;
+        font-size: clamp(2.6rem, 8vw, 6rem);
+        background: linear-gradient(135deg, var(--or), var(--pk));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 200% auto;
+        animation: shimmer 3s linear infinite;
+        cursor: pointer;
+        user-select: none;
+        line-height: 1.1;
+      }
+      @keyframes shimmer {
+        0% {
+          background-position: 0% center;
+        }
+        100% {
+          background-position: 200% center;
+        }
+      }
+      .hbd-name {
+        font-family: "Pacifico", cursive;
+        font-size: clamp(2rem, 7vw, 5rem);
+        color: var(--dk);
+        text-shadow: 3px 3px 0 var(--yw);
+        margin-bottom: 10px;
+        animation: pop 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) 0.2s both;
+      }
+      @keyframes pop {
+        from {
+          opacity: 0;
+          transform: scale(0.5);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+      .hbd-sub {
+        color: rgba(26, 16, 53, 0.55);
+        font-size: 1.1rem;
+        margin-bottom: 28px;
+      }
+      .home-btns {
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .btn-main {
+        padding: 14px 28px;
+        border-radius: 50px;
+        border: none;
+        background: linear-gradient(135deg, var(--or), var(--pk));
+        color: #fff;
+        font-family: "Nunito", sans-serif;
+        font-weight: 900;
+        font-size: 1rem;
+        cursor: pointer;
+        box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+        transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+      }
+      .btn-main:hover {
+        transform: translateY(-4px) scale(1.05);
+        box-shadow: 0 10px 28px rgba(255, 107, 53, 0.5);
+      }
+      .btn-soft {
+        padding: 14px 28px;
+        border-radius: 50px;
+        border: 2px solid rgba(26, 16, 53, 0.1);
+        background: #fff;
+        color: var(--dk);
+        font-family: "Nunito", sans-serif;
+        font-weight: 900;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+      }
+      .btn-soft:hover {
+        background: var(--yw);
+        border-color: var(--yw);
+        transform: translateY(-4px) scale(1.05);
+      }
+      .btn-song {
+        padding: 14px 28px;
+        border-radius: 50px;
+        border: none;
+        background: linear-gradient(135deg, var(--pu), #c084fc);
+        color: #fff;
+        font-family: "Nunito", sans-serif;
+        font-weight: 900;
+        font-size: 1rem;
+        cursor: pointer;
+        box-shadow: 0 6px 20px rgba(155, 93, 229, 0.4);
+        transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        position: relative;
+        overflow: hidden;
+      }
+      .btn-song:hover {
+        transform: translateY(-4px) scale(1.05);
+        box-shadow: 0 10px 28px rgba(155, 93, 229, 0.55);
+      }
+      .btn-song.playing {
+        animation: songPulse 1s ease-in-out infinite alternate;
+      }
+      @keyframes songPulse {
+        from {
+          box-shadow: 0 6px 20px rgba(155, 93, 229, 0.4);
+          transform: scale(1);
+        }
+        to {
+          box-shadow: 0 10px 36px rgba(155, 93, 229, 0.75);
+          transform: scale(1.04);
+        }
+      }
+      .egg-hint {
+        margin-top: 14px;
+        font-size: 0.8rem;
+        color: rgba(26, 16, 53, 0.3);
+        min-height: 18px;
+      }
+
+      /* INNER PAGES */
+      .inner {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 90px 24px 70px;
+      }
+      .back {
+        display: inline-block;
+        margin-bottom: 20px;
+        background: #fff;
+        border: 2px solid rgba(0, 0, 0, 0.08);
+        color: var(--dk);
+        padding: 8px 18px;
+        border-radius: 50px;
+        font-family: "Nunito", sans-serif;
+        font-weight: 700;
+        font-size: 0.9rem;
+        cursor: pointer;
+        transition: 0.22s;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+      }
+      .back:hover {
+        background: var(--or);
+        color: #fff;
+        border-color: var(--or);
+      }
+      .pg-title {
+        font-family: "Pacifico", cursive;
+        font-size: clamp(1.8rem, 5vw, 3rem);
+        background: linear-gradient(135deg, var(--or), var(--pk));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 6px;
+      }
+      .pg-sub {
+        color: rgba(26, 16, 53, 0.5);
+        font-size: 0.95rem;
+        margin-bottom: 26px;
+      }
+
+      /* PROGRESS */
+      .prog-wrap {
+        margin-bottom: 26px;
+      }
+      .prog-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8px;
+      }
+      .prog-top span {
+        font-weight: 800;
+        font-size: 0.95rem;
+      }
+      .prog-track {
+        height: 18px;
+        border-radius: 50px;
+        background: rgba(0, 0, 0, 0.08);
+        overflow: hidden;
+        box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.1);
+      }
+      .prog-fill {
+        height: 100%;
+        width: 0%;
+        background: linear-gradient(90deg, var(--or), var(--pk), var(--yw));
+        background-size: 200% auto;
+        border-radius: 50px;
+        transition: width 0.7s cubic-bezier(0.34, 1.56, 0.64, 1);
+        animation: shimmer 2s linear infinite;
+      }
+
+      /* GAME */
+      .game-card {
+        background: #fff;
+        border-radius: 20px;
+        padding: 32px 28px;
+        box-shadow: var(--sh);
+        text-align: center;
+      }
+      .game-lbl {
+        font-size: 0.76rem;
+        text-transform: uppercase;
+        letter-spacing: 0.13em;
+        color: var(--or);
+        font-weight: 900;
+        margin-bottom: 10px;
+      }
+      .game-msg {
+        font-family: "Pacifico", cursive;
+        font-size: clamp(1.6rem, 6vw, 3.5rem);
+        color: var(--dk);
+        margin-bottom: 28px;
+        animation: msgpop 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+      }
+      @keyframes msgpop {
+        from {
+          opacity: 0;
+          transform: scale(0.6) rotate(-6deg);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1) rotate(0);
+        }
+      }
+      .choices {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        margin-bottom: 18px;
+      }
+      .choices button {
+        padding: 11px 22px;
+        border-radius: 50px;
+        border: 2px solid rgba(26, 16, 53, 0.1);
+        background: #fff;
+        color: var(--dk);
+        font-family: "Nunito", sans-serif;
+        font-weight: 800;
+        font-size: 0.95rem;
+        cursor: pointer;
+        transition: all 0.22s cubic-bezier(0.34, 1.56, 0.64, 1);
+      }
+      .choices button:hover {
+        background: var(--pu);
+        color: #fff;
+        border-color: var(--pu);
+        transform: scale(1.08);
+      }
+      .choices button.ok {
+        background: #d4f7e7;
+        border-color: var(--tl);
+        pointer-events: none;
+      }
+      .choices button.no {
+        background: #ffe0e0;
+        border-color: #ff6b6b;
+        animation: shake 0.4s ease;
+        pointer-events: none;
+      }
+      @keyframes shake {
+        0%,
+        100% {
+          transform: translateX(0);
+        }
+        25% {
+          transform: translateX(-7px);
+        }
+        75% {
+          transform: translateX(7px);
+        }
+      }
+      .feedback {
+        min-height: 28px;
+        font-weight: 900;
+        font-size: 1rem;
+        color: var(--dk);
+      }
+
+      /* PEOPLE GRID */
+      .ppl-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
+      .pcard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+        transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        animation: pop 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+      }
+      .pcard:hover {
+        transform: translateY(-8px) scale(1.06);
+      }
+      .print {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--or), var(--pk));
+        padding: 3px;
+        box-shadow: 0 6px 20px rgba(255, 107, 53, 0.3);
+        position: relative;
+      }
+      .print.locked {
+        background: linear-gradient(135deg, #bbb, #999);
+        box-shadow: none;
+        filter: grayscale(1);
+      }
+      .print img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #fff;
+        display: block;
+      }
+      .lkbadge {
+        position: absolute;
+        bottom: -2px;
+        right: -2px;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background: var(--dk);
+        border: 2px solid #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.9rem;
+      }
+      .pname {
+        font-weight: 800;
+        font-size: 0.88rem;
+        text-align: center;
+        color: var(--dk);
+      }
+
+      /* PROFILE PAGE */
+      #pg-profile .inner {
+        max-width: 1000px;
+        position: relative;
+      }
+
+      /* Scattered background photos */
+      .profile-bg-photos {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: 0;
+        overflow: hidden;
+      }
+
+      /* ============================================================
+         SCATTERED BG PHOTOS
+         To adjust the background photo grid:
+           - BG_COLS / BG_ROWS: number of columns and rows in the grid
+           - BG_PHOTO_SIZE: base width in px (tweak in JS: BG_PHOTO_SIZE)
+           - BG_OPACITY: transparency (0 = invisible, 1 = fully opaque)
+           - BG_JITTER: max random offset in % from each grid cell centre
+           - BG_MAX_ROTATE: max tilt angle in degrees (e.g. 10 = ±10°)
+         To adjust a specific PROFILE main photo's crop/position:
+           - Find the person in PEOPLE array and add an `objectPosition`
+             property, e.g. objectPosition: "center 20%"
+             (use "top", "bottom", "center", "left", "right" or % values)
+      ============================================================ */
+
+      .bg-photo {
+        position: absolute;
+        border-radius: 14px;
+        object-fit: cover;
+        opacity: 0;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        border: 3px solid rgba(255, 255, 255, 0.7);
+        transition: opacity 1s ease;
+        pointer-events: none;
+        /* object-position is set inline per photo */
+      }
+      .bg-photo.visible {
+        opacity: var(--bg-opacity, 0.35);
+      }
+
+      /* Main photo cycling */
+      .prof-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+        align-items: start;
+        position: relative;
+        z-index: 2;
+      }
+      @media (max-width: 660px) {
+        .prof-layout {
+          grid-template-columns: 1fr;
+        }
+      }
+      .prof-main-photo-wrap {
+        position: relative;
+        cursor: pointer;
+        border-radius: 26px;
+        overflow: hidden;
+        box-shadow: 0 16px 60px rgba(255, 107, 53, 0.22);
+        border: 4px solid #fff;
+        aspect-ratio: 3/4;
+        animation: slideL 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+      }
+      @keyframes slideL {
+        from {
+          opacity: 0;
+          transform: translateX(-36px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      .prof-main-photo-wrap img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: opacity 0.5s ease;
+        position: absolute;
+        inset: 0;
+        /* object-position is set inline per-photo */
+      }
+      .prof-main-photo-wrap img.hidden {
+        opacity: 0;
+      }
+      .photo-dots {
+        position: absolute;
+        bottom: 12px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 6px;
+        z-index: 3;
+      }
+      .photo-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.5);
+        border: 2px solid rgba(255, 255, 255, 0.8);
+        transition: 0.3s;
+        cursor: pointer;
+      }
+      .photo-dot.active {
+        background: #fff;
+        transform: scale(1.2);
+      }
+      .photo-tap-hint {
+        position: absolute;
+        bottom: 42px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(0, 0, 0, 0.45);
+        color: #fff;
+        padding: 4px 12px;
+        border-radius: 50px;
+        font-size: 0.72rem;
+        font-weight: 700;
+        white-space: nowrap;
+        z-index: 3;
+        opacity: 0.8;
+        pointer-events: none;
+      }
+      .prof-card {
+        background: #fff;
+        border-radius: 20px;
+        padding: 30px;
+        box-shadow: var(--sh);
+        animation: slideR 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) 0.1s both;
+        position: sticky;
+        top: 90px;
+        z-index: 2;
+      }
+      @keyframes slideR {
+        from {
+          opacity: 0;
+          transform: translateX(36px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      .prof-name {
+        font-family: "Pacifico", cursive;
+        font-size: clamp(1.5rem, 4vw, 2.4rem);
+        background: linear-gradient(135deg, var(--or), var(--pk));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 18px;
+      }
+      .msg-box {
+        background: linear-gradient(135deg, #fff8ee, #fff0f6);
+        border: 2px solid rgba(255, 107, 53, 0.12);
+        border-radius: 16px;
+        padding: 22px;
+      }
+      .msg-lbl {
+        font-size: 0.74rem;
+        text-transform: uppercase;
+        letter-spacing: 0.13em;
+        color: var(--or);
+        font-weight: 900;
+        margin-bottom: 8px;
+      }
+      .msg-txt {
+        font-size: 1.13rem;
+        line-height: 1.85;
+        color: var(--dk);
+        font-weight: 700;
+        unicode-bidi: plaintext;
+      }
+      .photo-counter {
+        margin-top: 12px;
+        text-align: center;
+        font-size: 0.8rem;
+        color: rgba(26, 16, 53, 0.4);
+        font-weight: 700;
+      }
+
+      /* EASTER EGG */
+      #pg-egg {
+        background: radial-gradient(
+          ellipse at center,
+          #fdf4e7 0%,
+          #ffe0f0 100%
+        );
+      }
+      .egg-title {
+        font-family: "Pacifico", cursive;
+        font-size: clamp(1.6rem, 5vw, 3rem);
+        color: var(--dk);
+        margin-bottom: 8px;
+      }
+      .egg-sub {
+        color: rgba(26, 16, 53, 0.6);
+        margin-bottom: 28px;
+      }
+      .vid-frame {
+        width: 100%;
+        max-width: 680px;
+        border-radius: 24px;
+        overflow: hidden;
+        box-shadow: 0 16px 60px rgba(255, 107, 53, 0.3);
+        border: 4px solid var(--or);
+        animation: pop 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) 0.1s both;
+        background: #000;
+      }
+      .vid-frame video {
+        width: 100%;
+        display: block;
+        max-height: 70vh;
+        outline: none;
+      }
+      .vid-fallback {
+        padding: 24px;
+        text-align: center;
+        font-weight: 700;
+        color: rgba(26, 16, 53, 0.5);
+        display: none;
+      }
+      .vid-open-btn {
+        display: inline-block;
+        margin-top: 12px;
+        padding: 12px 26px;
+        border-radius: 50px;
+        background: linear-gradient(135deg, var(--or), var(--pk));
+        color: #fff;
+        font-weight: 900;
+        font-family: "Nunito", sans-serif;
+        text-decoration: none;
+        font-size: 0.95rem;
+        box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+        transition: 0.3s;
+      }
+      .vid-open-btn:hover {
+        transform: translateY(-3px);
+      }
+
+      /* SECRET VIDEO CAROUSEL */
+      .video-carousel {
+        width: min(92vw, 820px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        position: relative;
+      }
+
+      .video-nav {
+        flex: 0 0 auto;
+        width: 48px;
+        height: 48px;
+        border: none;
+        border-radius: 50%;
+        background: #fff;
+        color: var(--or);
+        font-size: 2.3rem;
+        line-height: 1;
+        cursor: pointer;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+        transition: 0.22s;
+        z-index: 5;
+      }
+
+      .video-nav:hover {
+        background: var(--or);
+        color: #fff;
+        transform: scale(1.08);
+      }
+
+      .video-carousel .vid-frame {
+        flex: 1;
+        min-width: 0;
+      }
+
+      .video-info {
+        text-align: center;
+        margin-top: 16px;
+        font-weight: 800;
+        color: rgba(26, 16, 53, 0.55);
+      }
+
+      .video-dots {
+        display: flex;
+        justify-content: center;
+        gap: 7px;
+        margin: 9px 0;
+      }
+
+      .video-dot {
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background: rgba(26, 16, 53, 0.18);
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        transition: 0.2s;
+      }
+
+      .video-dot.active {
+        background: var(--or);
+        transform: scale(1.25);
+      }
+
+      .video-info p {
+        font-size: 0.78rem;
+        font-weight: 700;
+        margin-top: 4px;
+      }
+
+      @media (max-width: 600px) {
+        .video-carousel {
+          gap: 5px;
+        }
+
+        .video-nav {
+          width: 40px;
+          height: 40px;
+          font-size: 2rem;
+        }
+      }
+
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: var(--or);
+        border-radius: 3px;
+      }
+
+      .profile-videos { margin-top: 18px; }
+      .profile-video-title { font-weight: 900; margin-bottom: 8px; }
+      .profile-video-row { display:flex; align-items:center; gap:8px; }
+      .profile-video-frame { flex:1; min-width:0; border-radius:14px; overflow:hidden; background:#111; }
+      .profile-video-frame video { width:100%; max-height:320px; display:block; }
+      .profile-video-counter { text-align:center; font-size:.85rem; font-weight:800; margin-top:6px; opacity:.75; }
+    </style>
+  </head>
+  <body>
+    <div id="floaters"></div>
+    <div class="profile-bg-photos" id="profile-bg-photos"></div>
+
+    <nav>
+      <div class="nav-logo">🎂 Yomna</div>
+      <div class="nav-links">
+        <button onclick="go('home')">🏠 Home</button>
+        <button onclick="go('game')">🎮 Game</button>
+        <button onclick="go('friends')">👯 Friends</button>
+        <button onclick="go('future-husband')">💍 Future Husband</button>
+      </div>
+    </nav>
+
+    <!-- HOME -->
+    <section id="pg-home" class="pg on">
+      <div class="orb ob1"></div>
+      <div class="orb ob2"></div>
+      <div class="orb ob3"></div>
+      <div class="home-inner">
+        <div class="bounce-row">
+          <span>🎈</span><span>🎉</span><span>🎂</span><span>🎉</span
+          ><span>🎈</span>
+        </div>
+        <h1 class="hbd-title" id="egg-tap">Happy Birthday</h1>
+        <h1 class="hbd-name">Yomna! 🥳</h1>
+        <p class="hbd-sub">Today is all about you 🌟</p>
+        <div class="home-btns">
+          <button class="btn-song" id="song-btn" onclick="toggleSong()">
+            🎵 Song from All of Us
+          </button>
+          <button class="btn-main" onclick="go('game')">
+            🎮 Play the Game
+          </button>
+          <button class="btn-soft" onclick="go('friends')">👯 Friends</button>
+          <button class="btn-soft" onclick="go('future-husband')">💍 Future Husband</button>
+        </div>
+        <p class="egg-hint" id="egg-hint"></p>
+      </div>
+    </section>
+
+    <!-- GAME -->
+    <section id="pg-game" class="pg">
+      <div class="inner">
+        <button class="back" onclick="go('home')">← Back</button>
+        <!-- CHANGED: title and hint label -->
+        <h2 class="pg-title">🎮 Guess Who Said This?</h2>
+        <div class="prog-wrap">
+          <div class="prog-top">
+            <span id="prog-txt">0 / 7 unlocked</span>
+            <span id="prog-ico">🔒</span>
+          </div>
+          <div class="prog-track">
+            <div class="prog-fill" id="prog-fill"></div>
+          </div>
+        </div>
+        <div class="game-card">
+          <p class="game-lbl">Hint:</p>
+          <p class="game-msg" id="game-msg">—</p>
+          <div class="choices" id="choices"></div>
+          <p class="feedback" id="feedback"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FRIENDS -->
+    <section id="pg-friends" class="pg">
+      <div class="inner">
+        <button class="back" onclick="go('home')">← Back</button>
+        <h2 class="pg-title">👯 Friends</h2>
+        <p class="pg-sub">Unlock messages by playing the game!</p>
+        <div class="ppl-grid" id="friends-grid"></div>
+      </div>
+    </section>
+
+    <!-- FUTURE HUSBAND -->
+    <section id="pg-future-husband" class="pg">
+      <div class="inner">
+        <button class="back" onclick="go('home')">← Back</button>
+        <h2 class="pg-title">💍 Future Husband</h2>
+        <p class="pg-sub">A very special message just for you 💛</p>
+        <div class="ppl-grid" id="future-husband-grid"></div>
+      </div>
+    </section>
+
+    <!-- PROFILE -->
+    <section id="pg-profile" class="pg">
+      <div class="inner">
+        <button class="back" id="prof-back">← Back</button>
+        <div class="prof-layout">
+          <div
+            class="prof-main-photo-wrap"
+            id="prof-photo-wrap"
+            onclick="nextPhoto()"
+          >
+            <div class="photo-dots" id="photo-dots"></div>
+            <div class="photo-tap-hint" id="photo-tap-hint">
+              tap to see more 👆
+            </div>
+          </div>
+          <div class="prof-card">
+            <h2 class="prof-name" id="prof-name"></h2>
+            <div class="msg-box">
+              <p class="msg-lbl">Their message to Yomna 💌</p>
+              <p class="msg-txt" id="prof-msg"></p>
+            </div>
+            <p class="photo-counter" id="photo-counter"></p>
+            <div class="profile-videos" id="profile-videos" style="display:none">
+              <div class="profile-video-title">🎬 Videos</div>
+              <div class="profile-video-row">
+                <button class="video-nav prev" id="prof-video-prev" type="button" aria-label="Previous video">‹</button>
+                <div class="profile-video-frame"><video id="prof-video" controls playsinline preload="metadata"></video></div>
+                <button class="video-nav next" id="prof-video-next" type="button" aria-label="Next video">›</button>
+              </div>
+              <div class="profile-video-counter" id="prof-video-counter"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EASTER EGG -->
+    <section id="pg-egg" class="pg">
+      <button
+        class="back"
+        style="position: absolute; top: 80px; left: 24px; z-index: 10"
+        onclick="closeEgg()"
+      >
+        ← Back
+      </button>
+      <h2 class="egg-title">🎬 A Secret Message Just For You...</h2>
+      <p class="egg-sub">From the people who love you most 💛</p>
+
+      <div class="video-carousel" id="video-carousel">
+        <button class="video-nav prev" onclick="changeSecretVideo(-1)" aria-label="Previous video">‹</button>
+        <div class="vid-frame">
+          <video
+            id="fam-vid"
+            controls
+            playsinline
+            preload="metadata"
+            style="width: 100%; display: block; max-height: 70vh"
+          ></video>
+          <div class="vid-fallback" id="vid-fallback">
+            <p>Video not loading?</p>
+            <a class="vid-open-btn" id="vid-open-btn" href="#" target="_blank">▶ Open Video Directly</a>
+          </div>
+        </div>
+        <button class="video-nav next" onclick="changeSecretVideo(1)" aria-label="Next video">›</button>
+      </div>
+
+      <div class="video-info">
+        <span id="video-counter">1 / 13</span>
+        <div class="video-dots" id="video-dots"></div>
+        <p>← Swipe or use the arrows to see the other videos →</p>
+      </div>
+    </section>
+
+    <!-- Sound files -->
+    <audio id="sfx-wrong" src="wrong.mp3" preload="auto"></audio>
+    <audio id="sfx-success" src="success.mp3" preload="auto"></audio>
+    <audio id="sfx-song" src="SurpriseSong.mp3" preload="auto"></audio>
+
+    <script>
+      // ============================================================
+      // PEOPLE DATA
+      //
+      // photos[]:   first = main profile photo, rest = cycling/bg photos
+      // msg:        the "hint" shown in the game
+      // wish:       the full message shown on their profile
+      //
+      // PHOTO CROP/POSITION — per photo adjustment:
+      //   Add an "objectPositions" array (same length as photos).
+      //   Each entry is a CSS object-position string, e.g.:
+      //     "center top"    → shows top of image (good for faces near top)
+      //     "center 20%"    → 20% from the top
+      //     "center center" → default centred crop
+      //     "center bottom" → shows bottom of image
+      //   Example:
+      //     objectPositions: ["center 20%", "center center", "center top"]
+      //   If omitted, all photos use "center center".
+      //
+      // BACKGROUND PHOTO SETTINGS (applies to all pages):
+      //   Edit the constants in the BG PHOTO CONFIG section below.
+      // ============================================================
+      var PEOPLE = [
+        {
+          name: "Noura",
+          group: "friends",
+          msg: "المجنونة",
+          photos: ["images/noura.jpeg", "images/noura1.jpeg", "images/noura2.jpeg"],
+          objectPositions: ["center center"],
+          unlocked: false,
+          videos: [],
+          wish: "كل سنه وانتي طيبه يا نيمووووووز انا بحبك اوي بجد ربنا يخليكي ليا يا مجنووونه ونفضل مع بعض علطول",
+        },
+        {
+          name: "Leen",
+          group: "friends",
+          msg: "ابوس",
+          photos: ["images/leen.jpeg"],
+          objectPositions: ["center center"],
+          unlocked: false,
+          videos: ["videos/leenvid.mp4"],
+          wish: "Kol sana wenti tayba y maymona w yarab nfdl s7ab tol el3omr y habebi kbrti fashkh ya3ni msh kda bs ok khodi bosa b elroseya😉",
+        },
+        {
+          name: "Nour",
+          group: "friends",
+          msg: "Ana 3and khalto",
+          photos: ["images/noor.jpeg"],
+          objectPositions: ["center center"],
+          unlocked: false,
+          videos: ["videos/nouravid.mp4"],
+          wish: "kol sana wnty tayeba ya nemoo bahebek mot w definitely one of the realest people I know w yarab tkon sana helwa aaleky w t7a2a2y kol el nfsk feh, I'm taking u with me far into the future kda kda, blast it to the max y alby w sweet 19",
+        },
+        {
+          name: "Qamar",
+          group: "friends",
+          msg: "هعملك شعرك",
+          photos: ["images/qamar.jpeg"],
+          objectPositions: ["center center"],
+          unlocked: false,
+          videos: [],
+          wish: "Happy birthdayyy I hope your day is as beautiful and special as you are Wishing you lots of happiness love and everything you’ve been wishing for Have the best year everrr",
+        },
+        {
+          name: "Zeina",
+          group: "friends",
+          msg: "منخيرك كبيرة",
+          photos: ["images/zeina.jpeg"],
+          objectPositions: ["center center"],
+          unlocked: false,
+          videos: ["videos/zeinavid.mp4"],
+          wish: "Kol sana wenty tayba ya yomna bgd nfsy tb2y mabsota w t3y4y kol sana ahla mn el tanya w ashal ashan tstahliha",
+        },
+        {
+          name: "Maysoon",
+          group: "friends",
+          msg: "Ana msh khayfa mn haaaaaagaaaaaaa",
+          photos: ["images/mayson.jpeg", "images/mayson1.jpeg"],
+          objectPositions: ["center center", "center center"],
+          unlocked: false,
+          videos: ["videos/maysonvid.mp4"],
+          wish: "Happy birthday ya nemooooo kol sana wenty 3egla ad el doniaa w akbar bashmohandesa feki ya masr kodwety fel Cs kda kda bas akeed msh fel 3elakat😂😂😂walahi bad3elek dayman rabna ywf2ek w ttbesty fe hayatek w tngahy fe shoghlek w th2a2y el hayah el enty nfsek feeha w y3mlek kol haga feeha kheir w mn albyy walahiii oxembellah ana bahebek fashkh fashkh fashkh w 3omrek ma htb2y el shakhs el ana momken akhsaro le ay sabab w kda kda yaani basek feki aktar mn ay haga msh aarfa aaoul eh walahi bas bahebek moottt enjoy ya hobyy😘❤️",
+        },
+        {
+          name: "Future Husband",
+          group: "future-husband",
+          msg: "حصل 😉😍",
+          photos: [
+            "images/h1.jpeg",
+            "images/h2.jpeg",
+            "images/h3.jpeg",
+            "images/h4.jpeg",
+            "images/h5.jpeg",
+            "images/h6.jpeg",
+            "images/h7.jpeg",
+          ],
+          objectPositions: [
+            "center center",
+            "center center",
+            "center center",
+            "center center",
+            "center center",
+            "center center",
+            "center center",
+          ],
+          unlocked: false,
+          videos: ["videos/h1vid.mp4", "videos/h2vid.mp4", "videos/h3vid.mp4", "videos/h4vid.mp4", "videos/hvid.mp4"],
+          wish: "كل سنه وأنتي طيبه يا احلا يويو في الدنيا بحبك اوي والله انتي مش عارفه أنا بحبك ازاي والله بحبك اوي يا يويو  ربنا يخليكي ليا يا حبيبتي و ان شاءالله علي طول مع بعض دايما و تطلعي عيني براحتك يا روحي بحبك اوي 😘❤️❤️",
+        },
+      ];
+
+      // ============================================================
+      // BG PHOTO CONFIG — tweak these to adjust the scattered grid
+      // ============================================================
+      var BG_COLS = 5; // number of columns in the grid
+      var BG_ROWS = 4; // number of rows in the grid
+      var BG_PHOTO_SIZE = 160; // base photo width in px
+      var BG_SIZE_VARY = 0.2; // ± size variation (0 = all same, 0.3 = ±30%)
+      var BG_OPACITY = 0.32; // opacity of bg photos (0–1)
+      var BG_JITTER = 4; // max random offset % from grid cell centre
+      var BG_MAX_ROTATE = 9; // max tilt in degrees (±)
+      // ============================================================
+
+      // Uploaded photos used as the scattered background.
+      var YOMNA_PHOTOS = [
+        "images/h1.jpeg",
+        "images/h2.jpeg",
+        "images/h3.jpeg",
+        "images/h4.jpeg",
+        "images/h5.jpeg",
+        "images/h6.jpeg",
+        "images/h7.jpeg",
+        "images/leen.jpeg",
+        "images/mayson.jpeg",
+        "images/mayson1.jpeg",
+        "images/noor.jpeg",
+        "images/noura.jpeg",
+        "images/noura1.jpeg",
+        "images/noura2.jpeg",
+        "images/qamar.jpeg",
+        "images/zeina.jpeg",
+      ];
+
+      // ============================================================
+      // FLOATING BG EMOJIS
+      // ============================================================
+      (function () {
+        var em = ["🎉", "🎈", "✨", "⭐", "💛", "🎂", "🌟", "🥳", "🧡", "💫"];
+        var c = document.getElementById("floaters");
+        for (var i = 0; i < 20; i++) {
+          var s = document.createElement("span");
+          s.textContent = em[Math.floor(Math.random() * em.length)];
+          s.style.cssText =
+            "left:" +
+            Math.random() * 100 +
+            "%;font-size:" +
+            (1 + Math.random() * 1.1) +
+            "rem;animation-duration:" +
+            (10 + Math.random() * 14) +
+            "s;animation-delay:-" +
+            Math.random() * 14 +
+            "s";
+          c.appendChild(s);
+        }
+      })();
+
+      // ============================================================
+      // SOUND — Web Audio API with boosted gain
+      // Volume knob: change MASTER_VOL (0.0 – 1.0, default 0.9)
+      // ============================================================
+      var MASTER_VOL = 0.9;
+      var AC = null;
+      function getAC() {
+        if (!AC) AC = new (window.AudioContext || window.webkitAudioContext)();
+        return AC;
+      }
+
+      // Wrong sound — loud descending buzz
+      function sndWrong() {
+        // Try the audio file first at full volume
+        var el = document.getElementById("sfx-wrong");
+        if (el) {
+          try {
+            el.volume = 1.0;
+            el.currentTime = 0;
+            el.play().catch(function () {
+              _sndWrongSynth();
+            });
+            return;
+          } catch (e) {}
+        }
+        _sndWrongSynth();
+      }
+      function _sndWrongSynth() {
+        try {
+          var a = getAC();
+          var o = a.createOscillator(),
+            g = a.createGain();
+          o.connect(g);
+          g.connect(a.destination);
+          o.type = "sawtooth";
+          o.frequency.setValueAtTime(340, a.currentTime);
+          o.frequency.exponentialRampToValueAtTime(60, a.currentTime + 0.5);
+          g.gain.setValueAtTime(MASTER_VOL, a.currentTime);
+          g.gain.exponentialRampToValueAtTime(0.001, a.currentTime + 0.5);
+          o.start();
+          o.stop(a.currentTime + 0.5);
+        } catch (e) {}
+      }
+
+      // Per-correct chime — quick positive ding
+      function sndCorrectChime() {
+        try {
+          var a = getAC();
+          [523, 659, 784].forEach(function (f, i) {
+            var o = a.createOscillator(),
+              g = a.createGain();
+            o.connect(g);
+            g.connect(a.destination);
+            o.type = "sine";
+            o.frequency.value = f;
+            var t = a.currentTime + i * 0.08;
+            g.gain.setValueAtTime(MASTER_VOL * 0.7, t);
+            g.gain.exponentialRampToValueAtTime(0.001, t + 0.35);
+            o.start(t);
+            o.stop(t + 0.35);
+          });
+        } catch (e) {}
+      }
+
+      // Full WIN fanfare — only plays when ALL people are unlocked
+      function sndWinFanfare() {
+        // Play success.mp3
+        var el = document.getElementById("sfx-success");
+        if (el) {
+          try {
+            el.volume = 1.0;
+            el.currentTime = 0;
+            el.play().catch(function () {
+              _sndWinFanareSynth();
+            });
+            return;
+          } catch (e) {}
+        }
+        _sndWinFanareSynth();
+      }
+      function _sndWinFanareSynth() {
+        try {
+          var a = getAC();
+          var melody = [523, 659, 784, 1047, 1319, 1568, 2093];
+          melody.forEach(function (f, i) {
+            var o = a.createOscillator(),
+              g = a.createGain();
+            o.connect(g);
+            g.connect(a.destination);
+            o.type = "sine";
+            o.frequency.value = f;
+            var t = a.currentTime + i * 0.1;
+            g.gain.setValueAtTime(MASTER_VOL, t);
+            g.gain.exponentialRampToValueAtTime(0.001, t + 0.6);
+            o.start(t);
+            o.stop(t + 0.6);
+          });
+        } catch (e) {}
+      }
+
+      function sndPop() {
+        try {
+          var a = getAC();
+          var o = a.createOscillator(),
+            g = a.createGain();
+          o.connect(g);
+          g.connect(a.destination);
+          o.type = "sine";
+          o.frequency.setValueAtTime(600, a.currentTime);
+          o.frequency.exponentialRampToValueAtTime(900, a.currentTime + 0.07);
+          g.gain.setValueAtTime(MASTER_VOL * 0.5, a.currentTime);
+          g.gain.exponentialRampToValueAtTime(0.001, a.currentTime + 0.12);
+          o.start();
+          o.stop(a.currentTime + 0.12);
+        } catch (e) {}
+      }
+
+      function sndEgg() {
+        try {
+          var a = getAC();
+          [800, 1000, 1200, 1600, 2000].forEach(function (f, i) {
+            var o = a.createOscillator(),
+              g = a.createGain();
+            o.connect(g);
+            g.connect(a.destination);
+            o.type = "sine";
+            o.frequency.value = f;
+            var t = a.currentTime + i * 0.06;
+            g.gain.setValueAtTime(MASTER_VOL * 0.6, t);
+            g.gain.exponentialRampToValueAtTime(0.001, t + 0.5);
+            o.start(t);
+            o.stop(t + 0.5);
+          });
+        } catch (e) {}
+      }
+
+      // ============================================================
+      // SURPRISE SONG — plays for 20 seconds then stops
+      // ============================================================
+      var songTimer = null;
+      var songPlaying = false;
+
+      function toggleSong() {
+        var audio = document.getElementById("sfx-song");
+        var btn = document.getElementById("song-btn");
+        if (!audio) return;
+
+        if (songPlaying) {
+          // Stop it
+          audio.pause();
+          audio.currentTime = 0;
+          clearTimeout(songTimer);
+          songPlaying = false;
+          btn.textContent = "🎵 Song from All of Us";
+          btn.classList.remove("playing");
+        } else {
+          // Play it
+          audio.volume = 1.0;
+          audio.currentTime = 0;
+          audio.play().catch(function () {});
+          songPlaying = true;
+          btn.textContent = "⏹ Stop Song";
+          btn.classList.add("playing");
+          // Auto-stop after 20 seconds
+          songTimer = setTimeout(function () {
+            audio.pause();
+            audio.currentTime = 0;
+            songPlaying = false;
+            btn.textContent = "🎵 Song from All of Us";
+            btn.classList.remove("playing");
+          }, 20000);
+        }
+      }
+
+      // ============================================================
+      // SECRET VIDEOS — all uploaded videos for now
+      // ============================================================
+      var SECRET_VIDEOS = [
+        "videos/daniavid.mp4",
+        "videos/daniavid1.mp4",
+        "videos/h1vid.mp4",
+        "videos/h2vid.mp4",
+        "videos/h3vid.mp4",
+        "videos/h4vid.mp4",
+        "videos/hvid.mp4",
+        "videos/leenvid.mp4",
+        "videos/maysonvid.mp4",
+        "videos/nouravid.mp4",
+        "videos/salmavid.mp4",
+        "videos/salmavid1.mp4",
+        "videos/zeinavid.mp4",
+      ];
+      var secretVideoIdx = 0;
+
+      function initVideo() {
+        var vid = document.getElementById("fam-vid");
+        var fallback = document.getElementById("vid-fallback");
+        var openBtn = document.getElementById("vid-open-btn");
+        if (!vid) return;
+
+        secretVideoIdx = 0;
+        buildVideoDots();
+        loadSecretVideo();
+
+        // Swipe left/right on mobile to change videos.
+        var carousel = document.getElementById("video-carousel");
+        if (carousel && !carousel.dataset.swipeReady) {
+          carousel.dataset.swipeReady = "1";
+          var startX = 0;
+          carousel.addEventListener("touchstart", function (e) {
+            startX = e.changedTouches[0].screenX;
+          }, { passive: true });
+          carousel.addEventListener("touchend", function (e) {
+            var diff = e.changedTouches[0].screenX - startX;
+            if (Math.abs(diff) > 45) changeSecretVideo(diff < 0 ? 1 : -1);
+          }, { passive: true });
+        }
+      }
+
+      function loadSecretVideo() {
+        var vid = document.getElementById("fam-vid");
+        var fallback = document.getElementById("vid-fallback");
+        var openBtn = document.getElementById("vid-open-btn");
+        if (!vid || !SECRET_VIDEOS.length) return;
+
+        var src = SECRET_VIDEOS[secretVideoIdx];
+        vid.pause();
+        vid.removeAttribute("src");
+        vid.load();
+        vid.src = src;
+        vid.load();
+        fallback.style.display = "none";
+        if (openBtn) openBtn.href = src;
+
+        vid.onerror = function () {
+          fallback.style.display = "block";
+        };
+
+        document.getElementById("video-counter").textContent =
+          (secretVideoIdx + 1) + " / " + SECRET_VIDEOS.length;
+        document.querySelectorAll("#video-dots .video-dot").forEach(function (d, i) {
+          d.className = "video-dot" + (i === secretVideoIdx ? " active" : "");
+        });
+      }
+
+      function buildVideoDots() {
+        var dots = document.getElementById("video-dots");
+        if (!dots) return;
+        dots.innerHTML = "";
+        SECRET_VIDEOS.forEach(function (_, idx) {
+          var d = document.createElement("button");
+          d.className = "video-dot" + (idx === secretVideoIdx ? " active" : "");
+          d.setAttribute("aria-label", "Go to video " + (idx + 1));
+          d.onclick = function () {
+            secretVideoIdx = idx;
+            loadSecretVideo();
+          };
+          dots.appendChild(d);
+        });
+      }
+
+      function changeSecretVideo(direction) {
+        if (!SECRET_VIDEOS.length) return;
+        secretVideoIdx =
+          (secretVideoIdx + direction + SECRET_VIDEOS.length) % SECRET_VIDEOS.length;
+        loadSecretVideo();
+      }
+
+      // ============================================================
+      // PAGE NAVIGATION
+      // ============================================================
+      var fromGroup = "friends";
+
+      function go(page) {
+        // Stop the surprise song if navigating away from home
+        if (page !== "home" && songPlaying) {
+          var _sa = document.getElementById("sfx-song");
+          var _sb = document.getElementById("song-btn");
+          if (_sa) {
+            _sa.pause();
+            _sa.currentTime = 0;
+          }
+          clearTimeout(songTimer);
+          songPlaying = false;
+          if (_sb) {
+            _sb.textContent = "🎵 Song from All of Us";
+            _sb.classList.remove("playing");
+          }
+        }
+
+        document.querySelectorAll(".pg").forEach(function (p) {
+          p.classList.remove("on");
+        });
+        var target = document.getElementById("pg-" + page);
+        if (!target) return;
+        target.classList.add("on");
+        window.scrollTo(0, 0);
+
+        if (page !== "profile") {
+          clearBgPhotos();
+          var pv = document.getElementById("prof-video");
+          if (pv) { pv.pause(); }
+        }
+
+        if (page === "game") setupGame();
+        if (page === "friends") buildGrid("friends", "friends-grid");
+        if (page === "future-husband") buildGrid("future-husband", "future-husband-grid");
+        if (page === "egg") initVideo();
+
+        // All non-profile pages use neblas photos for background
+        if (
+          page === "home" ||
+          page === "friends" ||
+          page === "future-husband" ||
+          page === "game"
+        ) {
+          buildBgPhotosFromArray(YOMNA_PHOTOS);
+        }
+      }
+
+      // ============================================================
+      // PROGRESS
+      // ============================================================
+      function updateProg() {
+        var gamePeople = PEOPLE.filter(function (p) { return p.group === "friends" || p.group === "future-husband"; });
+        var done = gamePeople.filter(function (p) {
+          return p.unlocked;
+        }).length;
+        var total = gamePeople.length;
+        var pct = Math.round((done / total) * 100);
+        document.getElementById("prog-fill").style.width = pct + "%";
+        document.getElementById("prog-txt").textContent =
+          done + " / " + total + " unlocked";
+        var icons = ["🔒", "😐", "🙂", "😃", "🤩", "🔥"];
+        document.getElementById("prog-ico").textContent =
+          icons[Math.floor((done / total) * (icons.length - 1))];
+      }
+
+      // ============================================================
+      // GAME
+      // ============================================================
+      var current = null;
+
+      function setupGame() {
+        updateProg();
+        var gamePeople = PEOPLE.filter(function (p) { return p.group === "friends" || p.group === "future-husband"; });
+        var locked = gamePeople.filter(function (p) {
+          return !p.unlocked;
+        });
+        if (locked.length === 0) {
+          document.getElementById("game-msg").textContent = "🎉 All unlocked!";
+          document.getElementById("choices").innerHTML =
+            "<p style='font-weight:900;color:var(--or);padding:10px'>Everyone unlocked! Go check their profiles 🥳</p>";
+          document.getElementById("feedback").textContent = "";
+          return;
+        }
+        current = locked[Math.floor(Math.random() * locked.length)];
+        var el = document.getElementById("game-msg");
+        el.style.animation = "none";
+        void el.offsetWidth;
+        el.style.animation = "msgpop .4s cubic-bezier(.34,1.56,.64,1) both";
+        el.textContent = current.msg;
+        document.getElementById("feedback").textContent = "";
+
+        var box = document.getElementById("choices");
+        box.innerHTML = "";
+        gamePeople.slice()
+          .sort(function () {
+            return Math.random() - 0.5;
+          })
+          .forEach(function (p) {
+            var b = document.createElement("button");
+            b.textContent = p.name;
+            b.onclick = function () {
+              handleGuess(p, b);
+            };
+            box.appendChild(b);
+          });
+      }
+
+      function handleGuess(p, btn) {
+        document.querySelectorAll("#choices button").forEach(function (b) {
+          b.onclick = null;
+        });
+
+        if (p.name === current.name) {
+          btn.classList.add("ok");
+          current.unlocked = true;
+
+          var gamePeople = PEOPLE.filter(function (pp) { return pp.group === "friends" || pp.group === "future-husband"; });
+          var done = gamePeople.filter(function (pp) {
+            return pp.unlocked;
+          }).length;
+          var total = gamePeople.length;
+          var allDone = done === total;
+
+          if (allDone) {
+            document.getElementById("feedback").textContent =
+              "🎉 GOOD JOB! YOU UNLOCKED EVERYONE 🥳🔥";
+            // WIN fanfare only fires when the last person is unlocked
+            sndWinFanfare();
+          } else {
+            document.getElementById("feedback").textContent = "✅ Correct!";
+            // Small chime for each individual correct answer
+            sndCorrectChime();
+          }
+
+          buildGrid("friends", "friends-grid");
+          updateProg();
+
+          setTimeout(function () {
+            if (!allDone) setupGame();
+          }, 1500);
+        } else {
+          btn.classList.add("no");
+          document.getElementById("feedback").textContent =
+            "❌ Nope! Try again 😅";
+          sndWrong();
+          setTimeout(function () {
+            btn.classList.remove("no");
+            document.querySelectorAll("#choices button").forEach(function (b) {
+              var person = PEOPLE.find(function (pp) {
+                return pp.name === b.textContent;
+              });
+              if (person)
+                b.onclick = function () {
+                  handleGuess(person, b);
+                };
+            });
+          }, 900);
+        }
+      }
+
+      // ============================================================
+      // BUILD GRIDS
+      // ============================================================
+      function buildGrid(group, containerId) {
+        var c = document.getElementById(containerId);
+        if (!c) return;
+        c.innerHTML = "";
+        PEOPLE.filter(function (p) {
+          return p.group === group;
+        }).forEach(function (p, i) {
+          var card = document.createElement("div");
+          card.className = "pcard";
+          card.style.animationDelay = i * 0.07 + "s";
+
+          var ring = document.createElement("div");
+          ring.className = p.unlocked ? "print" : "print locked";
+
+          var img = document.createElement("img");
+          img.src = p.photos[0];
+          img.alt = p.name;
+          // Apply per-photo object-position for the avatar thumbnail
+          if (p.objectPositions && p.objectPositions[0]) {
+            img.style.objectPosition = p.objectPositions[0];
+          }
+          ring.appendChild(img);
+
+          if (!p.unlocked) {
+            var lk = document.createElement("div");
+            lk.className = "lkbadge";
+            lk.textContent = "🔒";
+            ring.appendChild(lk);
+          }
+
+          var nm = document.createElement("div");
+          nm.className = "pname";
+          nm.textContent = p.unlocked ? p.name : "???";
+
+          card.appendChild(ring);
+          card.appendChild(nm);
+          card.onclick = function () {
+            sndPop();
+            if (p.unlocked) openProfile(p, group);
+            else go("game");
+          };
+          c.appendChild(card);
+        });
+      }
+
+      // ============================================================
+      // PROFILE — cycling photos
+      // ============================================================
+      var profPhotos = [];
+      var profObjPos = [];
+      var profObjFit = [];
+      var profPhotoIdx = 0;
+      var profAutoTimer = null;
+
+      var profVideos = [];
+      var profVideoIdx = 0;
+
+      function setupProfileVideos(p) {
+        profVideos = p.videos || [];
+        profVideoIdx = 0;
+        var box = document.getElementById("profile-videos");
+        var vid = document.getElementById("prof-video");
+        var counter = document.getElementById("prof-video-counter");
+        if (!box || !vid) return;
+        if (!profVideos.length) {
+          box.style.display = "none";
+          vid.pause();
+          vid.removeAttribute("src");
+          vid.load();
+          return;
+        }
+        box.style.display = "block";
+        loadProfileVideo();
+        document.getElementById("prof-video-prev").onclick = function(e) { e.stopPropagation(); changeProfileVideo(-1); };
+        document.getElementById("prof-video-next").onclick = function(e) { e.stopPropagation(); changeProfileVideo(1); };
+      }
+
+      function loadProfileVideo() {
+        var vid = document.getElementById("prof-video");
+        var counter = document.getElementById("prof-video-counter");
+        if (!vid || !profVideos.length) return;
+        vid.pause();
+        vid.src = profVideos[profVideoIdx];
+        vid.load();
+        counter.textContent = "Video " + (profVideoIdx + 1) + " of " + profVideos.length;
+      }
+
+      function changeProfileVideo(direction) {
+        if (!profVideos.length) return;
+        profVideoIdx = (profVideoIdx + direction + profVideos.length) % profVideos.length;
+        loadProfileVideo();
+      }
+
+      function openProfile(p, from) {
+        fromGroup = from;
+        document.getElementById("prof-back").onclick = function () {
+          go(from);
+        };
+        document.getElementById("prof-name").textContent = "🎉 " + p.name;
+        document.getElementById("prof-msg").textContent = p.wish;
+        setupProfileVideos(p);
+
+        profPhotos = p.photos;
+        profObjPos = p.objectPositions || [];
+        profObjFit = p.objectFits || [];
+        profPhotoIdx = 0;
+
+        // Remove old imgs from wrap
+        var wrap = document.getElementById("prof-photo-wrap");
+        wrap.querySelectorAll("img").forEach(function (el) {
+          el.remove();
+        });
+
+        profPhotos.forEach(function (src, idx) {
+          var img = document.createElement("img");
+          img.src = src;
+          img.alt = p.name;
+          // Per-photo crop position — adjust objectPositions[] in PEOPLE data
+          img.style.objectPosition = profObjPos[idx] || "center center";
+          // Per-photo fit — use "contain" for wide group shots, "cover" for portraits
+          img.style.objectFit = profObjFit[idx] || "cover";
+          if (idx !== 0) img.classList.add("hidden");
+          wrap.appendChild(img);
+        });
+
+        // Dots
+        var dotsEl = document.getElementById("photo-dots");
+        dotsEl.innerHTML = "";
+        if (profPhotos.length > 1) {
+          profPhotos.forEach(function (_, idx) {
+            var d = document.createElement("div");
+            d.className = "photo-dot" + (idx === 0 ? " active" : "");
+            d.onclick = function (e) {
+              e.stopPropagation();
+              goToPhoto(idx);
+            };
+            dotsEl.appendChild(d);
+          });
+          document.getElementById("photo-tap-hint").style.display = "block";
+          document.getElementById("photo-counter").textContent =
+            "Photo 1 of " + profPhotos.length + " — tap to switch";
+          clearInterval(profAutoTimer);
+          profAutoTimer = setInterval(function () {
+            nextPhoto();
+          }, 4000);
+        } else {
+          document.getElementById("photo-tap-hint").style.display = "none";
+          document.getElementById("photo-counter").textContent = "";
+          clearInterval(profAutoTimer);
+        }
+
+        // Build scattered bg using ALL photos from the same group for variety
+        var groupPhotos = PEOPLE.filter(function (pp) {
+          return pp.group === p.group;
+        }).flatMap(function (pp) {
+          return pp.photos;
+        });
+        buildBgPhotosFromArray(groupPhotos);
+        go("profile");
+      }
+
+      function goToPhoto(idx) {
+        var imgs = document
+          .getElementById("prof-photo-wrap")
+          .querySelectorAll("img");
+        imgs.forEach(function (el, i) {
+          el.classList.toggle("hidden", i !== idx);
+        });
+        profPhotoIdx = idx;
+        document
+          .querySelectorAll("#photo-dots .photo-dot")
+          .forEach(function (d, i) {
+            d.className = "photo-dot" + (i === idx ? " active" : "");
+          });
+        document.getElementById("photo-counter").textContent =
+          "Photo " +
+          (idx + 1) +
+          " of " +
+          profPhotos.length +
+          " — tap to switch";
+      }
+
+      function nextPhoto() {
+        if (profPhotos.length <= 1) return;
+        goToPhoto((profPhotoIdx + 1) % profPhotos.length);
+        sndPop();
+      }
+
+      // ============================================================
+      // SCATTERED BG PHOTOS — clean grid, no overlaps
+      // Tweak appearance using the BG_* constants at the top of <script>
+      // ============================================================
+      var bgPhotoInterval = null;
+
+      function buildBgPhotosFromArray(photoArray) {
+        clearBgPhotos();
+        if (!photoArray || photoArray.length === 0) return;
+
+        var container = document.getElementById("profile-bg-photos");
+        container.innerHTML = "";
+
+        var total = BG_COLS * BG_ROWS;
+        var placedCount = 0;
+
+        // Pre-shuffle a copy of the photo array so we cycle through nicely
+        var shuffled = photoArray.slice().sort(function () {
+          return Math.random() - 0.5;
+        });
+
+        for (var r = 0; r < BG_ROWS; r++) {
+          for (var c = 0; c < BG_COLS; c++) {
+            var img = document.createElement("img");
+            img.className = "bg-photo";
+
+            var photoIndex = placedCount % shuffled.length;
+            img.src = shuffled[photoIndex];
+
+            // Grid cell centre as percentage of viewport
+            // We divide the viewport into BG_COLS x BG_ROWS equal cells
+            // and place the photo at the centre of each cell ± small jitter
+            var cellW = 100 / BG_COLS; // % width of each cell
+            var cellH = 100 / BG_ROWS; // % height of each cell
+
+            var centreX = cellW * c + cellW / 2;
+            var centreY = cellH * r + cellH / 2;
+
+            // Jitter: small random nudge within ±BG_JITTER %
+            var jx = (Math.random() * 2 - 1) * BG_JITTER;
+            var jy = (Math.random() * 2 - 1) * BG_JITTER;
+
+            var finalX = centreX + jx; // % from left
+            var finalY = centreY + jy; // % from top
+
+            // Size with slight variation
+            var sizeVariation = 1 + (Math.random() * 2 - 1) * BG_SIZE_VARY;
+            var photoW = Math.round(BG_PHOTO_SIZE * sizeVariation);
+            var photoH = Math.round(photoW * 1.25); // portrait aspect
+
+            // Position: offset so the photo is centred on the cell point
+            img.style.left = "calc(" + finalX + "% - " + photoW / 2 + "px)";
+            img.style.top = "calc(" + finalY + "% - " + photoH / 2 + "px)";
+            img.style.width = photoW + "px";
+            img.style.height = photoH + "px";
+
+            // Tilt
+            var rotate = (Math.random() * 2 - 1) * BG_MAX_ROTATE;
+            img.style.transform = "rotate(" + rotate.toFixed(1) + "deg)";
+
+            // Opacity via CSS variable so the .visible class picks it up
+            img.style.setProperty("--bg-opacity", BG_OPACITY);
+
+            container.appendChild(img);
+
+            // Staggered fade-in
+            (function (el, delay) {
+              setTimeout(function () {
+                el.classList.add("visible");
+              }, delay);
+            })(img, placedCount * 35);
+
+            placedCount++;
+          }
+        }
+      }
+
+      function clearBgPhotos() {
+        clearInterval(bgPhotoInterval);
+        bgPhotoInterval = null;
+        document.getElementById("profile-bg-photos").innerHTML = "";
+        clearInterval(profAutoTimer);
+      }
+
+      // ============================================================
+      // EASTER EGG — tap "Happy Birthday" 5 times fast
+      // ============================================================
+      var eggN = 0,
+        eggT = null;
+      document.getElementById("egg-tap").addEventListener("click", function () {
+        eggN++;
+        clearTimeout(eggT);
+        var hint = document.getElementById("egg-hint");
+        if (eggN < 5) {
+          hint.textContent = "🔐 " + (5 - eggN) + " more taps...";
+          eggT = setTimeout(function () {
+            eggN = 0;
+            hint.textContent = "";
+          }, 2500);
+        } else {
+          eggN = 0;
+          hint.textContent = "";
+          sndEgg();
+          go("egg");
+        }
+      });
+
+      function closeEgg() {
+        var v = document.getElementById("fam-vid");
+        if (v) {
+          v.pause();
+          v.currentTime = 0;
+        }
+        secretVideoIdx = 0;
+        go("home");
+      }
+
+      // ============================================================
+      // INIT
+      // ============================================================
+      buildGrid("friends", "friends-grid");
+      buildGrid("future-husband", "future-husband-grid");
+      updateProg();
+      // Show Yomna photos on the home page on first load
+      buildBgPhotosFromArray(YOMNA_PHOTOS);
+    </script>
+  </body>
+</html>
